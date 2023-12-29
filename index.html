@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приветствие</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function greetUser() {
+            var userName = prompt("Введите ваше имя:");
+
+            if (userName) {
+                document.getElementById("greeting").innerHTML = "Привет, " + userName + "!";
+            } else {
+                document.getElementById("greeting").innerHTML = "Вы не ввели имя.";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Приветствие</h1>
+    <button onclick="greetUser()">Введите ваше имя</button>
+    <p id="greeting"></p>
+</body>
+
+</html>
